@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Luminary Arts and Science College</title>
     <link rel="icon" type="image/png" href="./ICON FOR COLLEGE.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <style>
     html{
@@ -45,6 +48,7 @@
         position: fixed;
         height: auto;
         width: 100vw;
+        z-index: 10;
     }
     .a:hover{
         color: #EF5F43;
@@ -95,12 +99,55 @@
         height: 100vh;
         width: 99vw;
         background-color: rgba(0, 0, 0, 0.7);
-        
-        
+        display: flex;
     }
-    #iframe{
-        margin-top: 10%;
+    .para{
+        flex-grow: 1;
+        width: 45vw;
     }
+    .img_home{
+        flex-grow: 1;
+        width: 45vw;
+        position: relative;
+
+    }
+
+    .img1{
+        position: absolute;
+        height: 80%;width: 80%;
+        z-index: 1;
+
+    }
+    .img2{
+        position: absolute;
+        height: 80%;width: 80%;
+        z-index: 2;
+        top: 20%;
+        left: 0%;
+    }
+    
+    .para{
+    padding: 5%;}
+    .para > h1{
+        position: relative;
+        top: 19%;
+        color: white;
+    }
+
+    .para > p{
+        position: relative;
+        top: 24%;
+        color: white;
+        text-indent: 30px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-size: 18px;
+    }
+    .para > button{
+        position: relative;
+        top: 30%;
+    }
+
     
 
 
@@ -128,12 +175,14 @@
         </header>
 
         <section class="black">
-            <div>
-                <h2>Welcome to University</h2>
+            <div class="para">
+                <h1>Welcome to Luminary Arts and Science College</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem saepe, dolorem vero nesciunt alias architecto quis cum unde obcaecati deleniti quisquam dolor libero soluta distinctio reprehenderit atque ratione iusto! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur minima totam delectus voluptates est nam, fuga expedita saepe nulla soluta inventore corporis ad ab odio recusandae id velit eum dolores.</p>
                 <button><a href="./admission.html">Apply Now</a></button>
             </div>
-            <div>
+            <div class="img_home">
+                <img class="img1" src="./home_p1_img/bar_code.png" alt="bar">
+                <img class="img2" src="./home_p1_img/student.png" alt="student">
 
             </div>
             
@@ -141,10 +190,30 @@
         </section>
     </div>
 
-    <div id="iframe">
+    <!-- <del>home page 2</del> -->
+     <div class="page_2">
+        <section>
+            <h4>WHO WE ARE</h4>
+            <h1>Knowledge will bring you the opportunity to make a difference.</h1>
+            <p>Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi. Turpis consectetur pulvinar auctor vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.</p>
+            <button class="pg_2_btn">DISCOVER MORE</button>
+        </section>
+        <aside>
+            <div></div>
+            <img src="./home_p1_img/image1.png" alt="">
+            <div>
+                <i class="fa-regular fa-bookmark" style="color: #e00b0b;"></i>
+                <h2>40+ Years<br>History</h2>
+                <p>Netus amet congue justo luctus auctor erat dapibus nam sodales ridiculus duis.</p>
+            </div>
+        </aside>
+
+     </div>
+
+    <!-- <div id="iframe">
                 <iframe width="400" height="250" src="https://www.youtube.com/embed/6ygTNiz550I" title="College Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62710.64003090368!2d79.78144605405865!3d10.779492928436518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a556c9797ef6927%3A0xc869efbb726e6072!2sNagapattinam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1757847174057!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div> 
+     </div>  -->
 </body>
 
 </html>
