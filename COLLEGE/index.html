@@ -5,63 +5,146 @@
     <title>Luminary Arts and Science College</title>
     <link rel="icon" type="image/png" href="./ICON FOR COLLEGE.png" >
 </head>
-<body>
-    <div>
-        <header>  
-            <div id="logo"><img src="./ICON FOR COLLEGE.png" alt="college icon" ></div>
-            <h1>Luminary Art's and Science College</h1>
-            <nav>
-                <a href="./academics.html">Academics</a>
-                <a href="./admission.html">Admission</a>
-                <a href="./gallery.html">Gallery</a>
-            </nav>
-        </header>
-        <h2>Welcome to University</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem saepe, dolorem vero nesciunt alias architecto quis cum unde obcaecati deleniti quisquam dolor libero soluta distinctio reprehenderit atque ratione iusto! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur minima totam delectus voluptates est nam, fuga expedita saepe nulla soluta inventore corporis ad ab odio recusandae id velit eum dolores.</p>
-        <div id="iframe">
-            <iframe width="400" height="250" src="https://www.youtube.com/embed/6ygTNiz550I" title="College Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62710.64003090368!2d79.78144605405865!3d10.779492928436518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a556c9797ef6927%3A0xc869efbb726e6072!2sNagapattinam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1757847174057!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div> 
-</div>
-</body>
 <style>
-    #logo{
-        background-color: antiquewhite;
-        border-radius: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    html{
+        scroll-behavior: smooth;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
         
     }
-    h1,h2{
-        color: blue;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+    button{
+        background-color: #A0C814;
+        border: 0px;
+        border-radius: 5px;
         text-align: center;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        font-weight: 400;
+        transition: color 1s linear;
+        font-size: 16px;
+        color: white;
+
     }
-    p{
-        font-size: 18px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+    button:hover{
+        background-color: #EF5F43;
     }
-    #iframe{
-        
-        height:300px;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+    h4{
+        color: white !important;
     }
-    iframe{
-        border-radius: 16px;
-        
+    nav{
+        background-color: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        height: auto;
+        width: 100vw;
+    }
+    .a:hover{
+        color: #EF5F43;
     }
     nav{
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
+        justify-content: center;
 
+        
+        
+    }
+    nav > div{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        
+    }
+    .college_icon{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+    }
+    .nav{
+        border-left:2px solid white;
+        border-right:2px solid white;
+        height: 8vh;
+        flex-grow: 1;
+    }
+    .header_btn{
+        flex-grow: 1.8;
+    }
+    .home_1{
+        background-image: url(./home_p1_img/image1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 99vw;
+        margin: 0px;
+    }
+    .black{
+        margin: 0px;
+        height: 100vh;
+        width: 99vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        
+        
+    }
+    #iframe{
+        margin-top: 10%;
     }
     
 
 
-
 </style>
+<body>
+    <div class="home_1">
+        <header>  
+            <nav>
+                <div class="college_icon">
+                    <img src="./ICON FOR COLLEGE.png" alt="college icon" height="50" width="50">
+                    <h4>Luminary Art's and Science College</h4>
+                </div>
+                <div class="nav">
+                    <a class="a" href="./academics.html">Academics</a>
+                    <a class="a" href="./admission.html">Admission</a>
+                    <a class="a" href="./gallery.html">Gallery</a>
+                    <a class="a" href="./test.html">About</a>
+                </div>
+                <div class="header_btn">
+                    <button>Empty</button>
+                </div>
+                
+            </nav>
+
+        </header>
+
+        <section class="black">
+            <div>
+                <h2>Welcome to University</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatem saepe, dolorem vero nesciunt alias architecto quis cum unde obcaecati deleniti quisquam dolor libero soluta distinctio reprehenderit atque ratione iusto! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur minima totam delectus voluptates est nam, fuga expedita saepe nulla soluta inventore corporis ad ab odio recusandae id velit eum dolores.</p>
+                <button><a href="./admission.html">Apply Now</a></button>
+            </div>
+            <div>
+
+            </div>
+            
+            
+        </section>
+    </div>
+
+    <div id="iframe">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/6ygTNiz550I" title="College Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62710.64003090368!2d79.78144605405865!3d10.779492928436518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a556c9797ef6927%3A0xc869efbb726e6072!2sNagapattinam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1757847174057!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div> 
+</body>
+
 </html>
