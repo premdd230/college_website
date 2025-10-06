@@ -4,46 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+        height: 100vh;
+        width: 100vw;
+        background-color: #f5f5f5;
+        background-image: url("gallery_img/nature.png");
+        background-size: cover;          
+        background-repeat: no-repeat;    
+        background-position: center;  
+        }
+        h1{
+            background-color: rgba(13, 13, 13, 0.7);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .container{
+            background-color: rgba(255, 254, 254, 0.5);
+            height: 70vh;
+            width: 80vw;
+            position: relative;
+            top: 10%;
+            left: 10%;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 7%;
+            overflow: auto;
+            
+            
+        }
+        input, textarea, select{
+            background-color: transparent;
+            border:1px solid white;
+        }
+        input:focus, textarea:focus, select:focus {
+            border: 1px solid white;
+            box-shadow: 0px 0px 5px #ef5f43;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 30px;
+
+            
+            
+            
+        }
+        form > div{
+            flex-grow: 1;
+            /* background-color: aquamarine; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, label{
+            margin: 10px;
+            width: 20vw;
+        }
+        input[type=submit]{
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-size: large;
+            font-weight: 600;
+            width: 10vw;
+        }
+        
+        a{
+            text-decoration: none;
+            position: absolute;
+            text-align: center;
+            bottom: 10px;
+            left: 45%;
+            padding: 10px;
+            background-color: yellowgreen;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px white;
+            transition: background-color 1s ease;
+        }
+        a:hover{
+            background-color: #ef5f43;
+        }
+
+    </style>
 </head>
 <body>
-    <h3>Admission Form</h3>
-    <form action="">
-        <label for="">Name:<input type="name" required></label>
-        <label for="">Email:<input type="email" required></label>
-        <label for="">Mobile No:<input type="tel" required></label>
-        <label for="">DOB:<input type="date" required></label><br>
+    <h1>Admission Form</h1>
+        <div class="container">
+            
+            <form action="" >
+                <div>
+                <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
 
-        <label for="">Gender:</label><br>
-        <input type="radio"  name="male" value="male"><p>male</p>
-        <input type="radio"  name="female" value="female"><p>female</p>
-        <label for="">Father Name: <input type="text" value="" required></label>
-        <label for="">Address
-            <textarea name="Address" id="" cols="10" rows="4">enter the address</textarea>
-        </label>
+                <div>
+                    <label for="mobile">Mobile</label>
+                    <input type="tel" name="number" id="mobile" required>
+                
+                    <label for="dob">DOB:</label>
+                    <input type="date" name="date" id="dob" required>
+                
+                    <label for="">Father Name:</label>
+                    <input type="text" value="" required>
+                </div>
+                
+                    
+                <div>
+                    <label for="">Gender:</label>   
+                        <input type="radio" name="gender" id="male" required>     <label for="male">male</label>
+                        <input type="radio" name="gender" id="female" required>   <label for="female">female</label>
+                
+                    <label for="address">Address</label>
+                        <textarea name="Address" id="address" cols="10" rows="4" required>enter the address</textarea>
+                
+                </div>
 
-        <label for="">Department
-            <select name="Department" id="">
-                <option value="Arts">Arts</option>
-                <option value="Science">Science</option>
-                <option value="Commerce">Commerce</option>
-            </select>
-        </label>
+                <div>
+                    <label for="department">Department</label>
+                    <select name="Department" id="department" required>
+                        <option value="" style="display: none;"></option>
+                        <option value="Arts">Arts</option>
+                        <option value="Science">Science</option>
+                        <option value="Commerce">Commerce</option>
+                    </select>
+                <label for="course">Course</label>
+                    <select name="Course" id="course" required>
+                        <option value="" style="display: none;"></option>
+                        <option value="BA Tamil">BA Tamil</option>
+                        <option value="BA English">BA English</option>
+                        <option value="B tech">B tech</option>
+                        <option value="Bsc Compter Sciene">Bsc Compter Sciene</option>
+                        <option value="Bcom">Bcom</option>
+                        <option value="BBA">BBA</option>
+                    </select>
+                </div>
+                <div>
+                <input type="submit">
+                </div>
 
-        <label for="">Course
-            <select name="Course" id="">
-                <option value="BA Tamil">BA Tamil</option>
-                <option value="BA English">BA English</option>
-                <option value="B tech">B tech</option>
-                <option value="Bsc Compter Sciene">Bsc Compter Sciene</option>
-                <option value="Bcom">Bcom</option>
-                <option value="BBA">BBA</option>
-            </select>
-        </label>
-        
-        <input type="submit">
+            </form>
 
-    </form>
-    
+        </div>
+        <a href="./index.html" target="_self">Back to home page</a>
 </body>
-<footer><h2><a href="./index.html">Back to home page</a></h2></footer>
+
 </html>

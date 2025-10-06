@@ -148,6 +148,7 @@
         top: 30%;
     }
 
+<<<<<<< HEAD
     /* page2 style code */
      .page_2{
         background-color: #EAEAEA;
@@ -170,6 +171,98 @@
         width: 50px;
      }
     
+=======
+    /* style for page 2 */
+    .page_2{
+        display: flex;
+        height: 100vh;
+        width: 99vw;
+        overflow: hidden;
+        background-color: #f5f5f5;
+        /* flex-direction: column; */
+    }
+    .page_2 > section{
+        flex-grow: 1;
+        width: 49.5vw;
+        padding: 10%;
+    }
+    .page_2 > section > h4{
+        color: #EF5F43 !important;
+        font-size: 20px;
+        font-weight: 800;
+        margin: 10px 0px;
+    }
+    .page_2 > section > h1{
+        font-size: 40px;
+        margin: 20px 0px;
+        text-align: justify;
+        
+    }
+    .page_2 > section > p{
+        font-size: 18px;
+        margin: 20px 0px;
+        line-height: 1.5;
+        text-indent: 30px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        text-align: justify;
+    }
+    .pg_2_btn{
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #EF5F43;
+        color: white;
+    }
+    .page_2 > aside{
+        flex-grow: 1;
+        width: 49.5vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10%;
+        
+    }
+
+    .page_2 > aside > img{
+        position: absolute;
+        height: 30vw;
+        width: 30vw;
+        z-index: 1;
+        /* border-radius: 10px; */
+        box-shadow: 0px 0px 10px grey;
+    }
+    .green{ 
+        position: absolute;
+        height: 20vw;
+        width: 20vw;
+        background-color: yellowgreen;
+        /* border-radius: 10px; */
+        z-index: 0;
+        bottom: 13%;
+        left: 13%;
+        box-shadow: 0px 0px 10px grey;  
+    }
+    .bookmark{
+        position: absolute;
+        height: 17vw;
+        width: 17vw;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px grey;
+        z-index: 2;
+        bottom: 5%;
+        right: 5%;
+        padding: 5%;
+        text-align: center;
+    }
+    .book_icon{
+        height: 3vw;
+        width: 3vw;
+    }
+>>>>>>> 91887e6d252407caf10ad4ff93a6f94bd0ac77c8
 
 
 </style>
@@ -182,10 +275,10 @@
                     <h4>Luminary Art's and Science College</h4>
                 </div>
                 <div class="nav">
-                    <a class="a" href="./academics.html">Academics</a>
-                    <a class="a" href="./admission.html">Admission</a>
-                    <a class="a" href="./gallery.html">Gallery</a>
-                    <a class="a" href="./test.html">About</a>
+                    <a class="a" href="./academics.html" target="_self">Academics</a>
+                    <a class="a" href="./admission.html" target="_self">Admission</a>
+                    <a class="a" href="./gallery.html" target="_self">Gallery</a>
+                    <a class="a" href="./test.html" target="_self">About</a>
                 </div>
                 <div class="header_btn">
                     <button>Empty</button>
@@ -219,11 +312,19 @@
             <p>Vivamus nulla montes vehicula ex semper mus finibus quis eleifend facilisi. Turpis consectetur pulvinar auctor vestibulum quisque. Velit quisque ante interdum consectetuer habitant blandit.</p>
             <button class="pg_2_btn">DISCOVER MORE</button>
         </section>
+<<<<<<< HEAD
         <aside class="right">
             <div></div>
             <img class="pg_2_img" src="./home_p1_img/image1.png" alt="">
             <div>
                 <i class="fa-regular fa-bookmark" style="color: #e00b0b;"></i>
+=======
+        <aside>
+            <div class="green"></div>
+            <img src="./home_p1_img/image1.png" alt="">
+            <div class="bookmark">
+                <img class="book_icon" src="./home_p1_img/image.png" alt="bookmark">
+>>>>>>> 91887e6d252407caf10ad4ff93a6f94bd0ac77c8
                 <h2>40+ Years<br>History</h2>
                 <p>Netus amet congue justo luctus auctor erat dapibus nam sodales ridiculus duis.</p>
             </div>
@@ -231,10 +332,7 @@
 
      </div>
 
-    <!-- <div id="iframe">
-                <iframe width="400" height="250" src="https://www.youtube.com/embed/6ygTNiz550I" title="College Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62710.64003090368!2d79.78144605405865!3d10.779492928436518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a556c9797ef6927%3A0xc869efbb726e6072!2sNagapattinam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1757847174057!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div>  -->
+    
 </body>
 
 </html>
